@@ -82,6 +82,8 @@ def main():
             or dt.hour > 20
     ).astype(int)
 
+    print(rdf.sort_values(['timestamp']))
+
     # group commits by theirs authors then aggregate 
     # flagged commits into a new data frame
     adf = rdf.groupby('name')['off'].agg(['sum', 'count'])
