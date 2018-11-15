@@ -17,9 +17,10 @@ données du dépôt d'une de nos applications (prenons Passerelle :
 ```
 git clone git@github.com:z4c/entrouvert.git \
     && cd entrouvert \
-    && virtualenv . \
+    && virtualenv -p python3 . \
     && source bin/activate \
     && pip install -r requirements.txt \
+    && python main.py \
     || echo "Whoopsey !"
 ```
 
