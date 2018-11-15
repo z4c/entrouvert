@@ -12,15 +12,20 @@ données du dépôt d'une de nos applications (prenons Passerelle :
 # How to use
 ## Environment setup
 
-@TODO setup.py 
+Replace git repository if needed in main.py 
+
+```
+GIT_REMOTE_URL = ....
+```
+
+Then open a terminal and run
 
 ```
 git clone git@github.com:z4c/entrouvert.git \
-    && cd entrouvert \
-    && virtualenv -p python3 . \
-    && source bin/activate \
-    && pip install -r requirements.txt \
-    && python main.py \
-    || echo "Whoopsey !"
+    && cd entrouvert && virtualenv -p python3 . && source bin/activate \
+    && pip install -r requirements.txt && python main.py \
+    || echo "Whoopsey ! let me know what's going wrong @ https://github.com/z4c/entrouvert/issues/new "
 ```
+
+Cheers,
 
